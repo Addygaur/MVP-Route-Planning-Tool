@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Route Planning Tool</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Route Planning Tool</h1>
+
+        <!-- Address Input Field -->
+        <input type="text" id="addressInput" placeholder="Enter Address">
+        <button onclick="addAddress()">Add Address</button>
+
+        <!-- Map Container -->
+        <div id="map"></div>
+
+        <!-- Plan Route Button -->
+        <button onclick="planRoute()">Plan Route</button>
+
+        <!-- Output Link -->
+        <p>View the optimized route <a href="YOUR_WEB_PORTAL_URL_HERE" target="_blank">here</a>.</p>
+    </div>
+
+    <!-- Google Maps JavaScript API -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCBsmFtYA11_00-2iFwzNbT2xoxXSM7F2Y&callback=initMap" async defer></script>
+    <script src="script.js"></script>
+</body>
+</html>
